@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="687.0" style="-fx-background-color: #1d2b29#1d2b29;" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Home">
+   <children>
+      <Pane fx:id="expensePane" layoutX="201.0" prefHeight="556.0" prefWidth="489.0" style="-fx-background-color: #1d2b29;" />
+      <Pane fx:id="incomePane" layoutX="200.0" prefHeight="556.0" prefWidth="489.0" style="-fx-background-color: #1d2b29 #1d2b29;" />
+      <VBox fx:id="sideBar" layoutX="-1.0" prefHeight="556.0" prefWidth="201.0" style="-fx-background-color: #041412;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="mainButtonPane" alignment="BOTTOM_LEFT" graphicTextGap="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #4f5a59#4f5a59;" text="Home" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-commodity-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="savingButton" alignment="BOTTOM_LEFT" graphicTextGap="13.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #4f5a59#4f5a59;" text="Saving" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-bank-card-dollar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="incomeButton" alignment="BOTTOM_LEFT" graphicTextGap="13.0" layoutX="10.0" layoutY="187.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #4f5a59#4f5a59;" text="Income" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-bank-card-dollar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="expenseButton" alignment="BOTTOM_LEFT" graphicTextGap="13.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #4f5a59#4f5a59;" text="Expenses" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-bank-card-dollar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="mainPane" layoutX="200.0" prefHeight="556.0" prefWidth="495.0" style="-fx-background-color: #1d2b29;" stylesheets="@stylesheet.css">
+         <children>
+            <WebView fx:id="webView" layoutX="23.0" layoutY="86.0" prefHeight="367.0" prefWidth="443.0" />
+            <Text fill="#f2eeee" layoutX="124.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;We simply attempt to be fearful when others are greedy and to  be greedy only when other are fearful&quot;  Warren Buffett" wrappingWidth="241.21630859375" />
+            <Label id="topBarText" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="68.0" prefHeight="57.0" prefWidth="341.0" style="-fx-background-color: #4f5a59;" stylesheets="@stylesheet.css" text="EdgeLedger" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="122.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-check-dollar-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

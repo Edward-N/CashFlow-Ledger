@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#topBarText{
+	-fx-background-radius: 0 0 30 30;
+}
+
+.chart-bar{
+	-fx-bar-fill: #d3e3d7;
+}
+
+.chart-title{
+	-fx-text-fill: #ffff;
+}
